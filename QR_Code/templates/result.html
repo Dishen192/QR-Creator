@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Result</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #B2E1D5;
+            margin: 0;
+            padding: 20px;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        input {
+            width: 300px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .centered-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 70px);
+        }
+        h2 {
+            color: white;
+            font-size: 50px;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<body style="background-color: #b2e1d5; padding-left: 600px;">
+    <h1 style="padding-left: 60px;">Your QR Code</h1>
+    <img src="{{ img_path }}" alt="QR Code">
+    <br>
+    <br>
+    <div style="padding-left: 70px;">
+        <button><a href="{{ img_path }}" download="qrcode.png">Download QR Code</a></button>
+        <br>
+        <br>
+    </div>
+    <div style="padding-left: 43px;">
+        <button><a href="/">Generate Another QR Code</a></button>
+    </div>
+</body>
+</html>
