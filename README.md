@@ -26,7 +26,7 @@ Make sure you have Python and pip installed on your computer before running the 
 
 ## Usage
 
-Run the ```study_buddy.py``` file in Microsoft Visual Studio Code or any other editor of your choice or by running
+Run the ```main.py``` file in Microsoft Visual Studio Code or any other editor of your choice or by running
 ```python
 C:\Users\User\python main.py
 ```
